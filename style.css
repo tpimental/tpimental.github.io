@@ -4,25 +4,24 @@ body {
     padding: 0;
 }
 
-.word-container {
+.header {
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 10px;
+}
+
+.name-container {
     width: 200px;
     height: 300px; /* Adjust the container height to display about 10 items */
     margin: 50px auto;
-    overflow-y: hidden;
-    position: relative;
+    overflow-y: scroll; /* Only the names will scroll */
     border: 1px solid #ccc;
-    display: flex;
-    align-items: center; /* Vertically center the list */
-    justify-content: center;
 }
 
 ul {
     list-style: none;
     padding: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: relative;
 }
 
 li {
