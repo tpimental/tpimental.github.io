@@ -1,6 +1,5 @@
 const wordList = document.getElementById('word-list');
 const containerHeight = wordList.clientHeight;
-
 let words = [];
 
 function fetchWords() {
