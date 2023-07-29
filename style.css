@@ -19,9 +19,15 @@ body {
     position: relative; /* Add relative position to enable absolute positioning of list items */
 }
 
+.scrollable {
+    overflow-y: scroll; /* Enable scrolling for this inner container */
+    height: 100%; /* Make the inner container take the full height of the outer container */
+}
+
 ul {
     list-style: none;
     padding: 0;
+    margin: 0; /* Remove the default margin for the ul element */
     position: absolute; /* Position the list absolutely inside the container */
     top: 50%;
     left: 50%;
