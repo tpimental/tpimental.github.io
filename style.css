@@ -14,14 +14,19 @@ body {
     width: 200px;
     height: 300px; /* Adjust the container height to display about 10 items */
     margin: 50px auto;
-    overflow-y: scroll; /* Only the names will scroll */
+    overflow: hidden; /* Hide the overflow to prevent the whole list from scrolling */
     border: 1px solid #ccc;
+    position: relative; /* Add relative position to enable absolute positioning of list items */
 }
 
 ul {
     list-style: none;
     padding: 0;
-    position: relative;
+    position: absolute; /* Position the list absolutely inside the container */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%; /* Ensure the list takes the full width of the container */
 }
 
 li {
