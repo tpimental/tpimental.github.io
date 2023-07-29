@@ -1,5 +1,5 @@
 // Fetch the names from the JSON file
-fetch('names.json')
+fetch('sorted_names.json')
     .then(response => response.json())
     .then(names => {
         // Get the <ul> element to add the names
