@@ -1,47 +1,18 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+/* Add your custom CSS styles here */
+
+.container {
+  padding-top: 20px;
 }
 
-.header {
-    text-align: center;
-    background-color: #f0f0f0;
-    padding: 10px;
+.card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
-.name-container {
-    width: 200px;
-    height: 300px; /* Adjust the container height to display about 10 items */
-    margin: 50px auto;
-    overflow: hidden; /* Hide the overflow to prevent the whole list from scrolling */
-    border: 1px solid #ccc;
-    position: relative; /* Add relative position to enable absolute positioning of list items */
+.card-title {
+  font-size: 1.2rem;
 }
 
-.scrollable {
-    overflow-y: scroll; /* Enable scrolling for this inner container */
-    height: 100%; /* Make the inner container take the full height of the outer container */
-}
-
-ul {
-    list-style: none;
-    padding: 0;
-    margin: 0; /* Remove the default margin for the ul element */
-    position: absolute; /* Position the list absolutely inside the container */
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%; /* Ensure the list takes the full width of the container */
-}
-
-li {
-    text-align: center;
-    opacity: 0.3;
-    transition: font-size 0.5s, opacity 0.5s;
-}
-
-li.center {
-    font-size: 2em;
-    opacity: 1;
+.card-text {
+  font-size: 1rem;
 }
