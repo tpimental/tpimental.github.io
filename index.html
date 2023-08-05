@@ -4,8 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>JSON List Display</title>
-  <!-- Add Bootstrap CSS link here -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
@@ -15,39 +14,6 @@
   </div>
 </div>
 
-<!-- Add Bootstrap JS and jQuery scripts here -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-<script>
-  // Example JSON list
-  const itemList = [
-    { name: "Item 1", description: "Description for Item 1" },
-    { name: "Item 2", description: "Description for Item 2" },
-    // Add more items here...
-  ];
-
-  // Function to create a card element for an item
-  function createItemCard(item) {
-    return `
-      <div class="col-md-4 mb-4">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">${item.name}</h5>
-            <p class="card-text">${item.description}</p>
-          </div>
-        </div>
-      </div>
-    `;
-  }
-
-  // Populate the row with item cards
-  const itemRow = document.getElementById('itemRow');
-  itemList.forEach(item => {
-    itemRow.innerHTML += createItemCard(item);
-  });
-</script>
-
+<script src="script.js"></script>
 </body>
 </html>
