@@ -21,3 +21,7 @@ body {
 .data-item {
   margin-bottom: 10px;
 }
+
+.nav-container {
+    text-align: center;
+}
