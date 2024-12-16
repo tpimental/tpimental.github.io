@@ -15,22 +15,100 @@
 <meta name="description" content="SNHU ePortfolio">
 <title>SNHU ePortoflio</title>
 <link rel="stylesheet" href="styles.css">
+<style>
+  /* Quick styling for structure */
+  body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+  }
+  header {
+      background: #333;
+      color: #fff;
+      padding: 1rem 0;
+      text-align: center;
+  }
+  section {
+      padding: 2rem;
+      border-bottom: 1px solid #ddd;
+  }
+  section h2 {
+      color: #333;
+  }
+  .journals ul, .optimizations ul {
+      list-style-type: square;
+      padding-left: 1.5rem;
+  }
+  footer {
+      text-align: center;
+      padding: 1rem;
+      background: #333;
+      color: #fff;
+  }
+</style>
 </head>
 <body>
-  <div-class="nav-container">
-      <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-        </ul>
-    </nav>
-  </div-class>
-<div class="container">
-  <h1>ePortfolio</h1>
-  <div class="data-container" id="dataContainer">
-    <!-- JSON data will be displayed here -->
-  </div>
-</div>
-<script src="script.js"></script>
+  <!-- Header Section -->
+  <header>
+      <h1>Tyler Pimental's SNHU ePortfolio</h1>
+      <p>Showcasing my growth, achievements, and eductional journey</p>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+      <a href="#self-assessment">Professional Self Assessment</a>
+      <a href="#code-review">Code Review</a>
+      <a href="#enhancement1">Enhancement One:  Software Design/Engineering </a>
+      <a href="#enhancement2">Enhancement Two: Algorithms and Data Structure </a>
+      <a href="#enhancement3">Enhancement Three: Databases </a>
+  </nav>
+
+  <!-- Professional Self Assessment -->
+  <section id="self-assessment">
+      <h2>Professional Self Assessment</h2>
+      <p>
+        I have been working professionally in the IT field for just about the last decade. Prior to starting my path towards earning my bachelor's in computer science, I considered myself to be technical in nature. I was and still am a person who likes to understand how things work at a fundamental level. Throughout my time here at SNHU, I have had the opportunity to dive into numerous areas of IT that I may have otherwise never seen while in my current career path. I also consider myself to be a technically flexible person by nature. Meaning, I can draw similiarties between technological domains, which lead me to be a quick learner. For example, prior to starting my introduction to Python course,  
+      </p>
+  </section>
+
+  <!-- Code Review -->
+  <section id="code-review">
+      <h2>Code Review</h2>
+      <p>
+        At the beginning of this course, I provided a code review to my instructor. This code review included my course of action for the course and which projects I was going to tackle throughout the enhancements. While I did not take this capstone course CS-499 in my final term, I finished most of my CS courses. Although I planned to use IT-140 Introduction to Scripting as the primary course. Within this course we originally worked on a text-based adventure game that allowed the student a fair bit of creativity. During the code review, I went over the previously developed code and its basic basics. I planned to keep the original Python language, however, add several graphical, algorithmic and database enhancements in order to display my mastery. 
+      </p>
+  </section>
+
+  <!-- Enhancement 1 -->
+  <section id="enhancement1">
+      <h2>Enhancement 1</h2>
+      <p>
+        During this enhancement, I have added in a graphical element and even added the ability for the user to use their mouse when navigating. Additionally, I have tried to add more descriptive comments to not only help myself whenever I revisit this code, but also to others.  
+
+        I have opted to use the tkinter library, as it is very user friendly, and it was easy to begin using. This allows me to bundle png assets into the project and later display them to the user to visually show them where they are in the game. I am by no means an artist, so to quickly generate some images that fit the style of my game, I have chosen to use OpenAI to help me get some starter images. There are a few bugs currently with formatting of the images, but I hope to resolve those this week. I plan to add a few more enhancements this week too that would include some visual clues to the player, so they understand where they should be clicking. Also, I have begun working early on some of the algorithmic pieces of the code and how player navigation will work. Due to this, the navigation piece is a little buggy, and you can currently only navigate between 3 rooms.          
+      </p>
+  </section>
+
+  <!-- Enhancement 2 -->
+  <section id="enhancement2">
+      <h2>Enhancement 2</h2>
+      <p>
+        The second enhancement included a lot of refining to the room navigation piece to my game. The player was now able to fully navigate between rooms by leveraging arrays and detailed variable dictionaries. This allowed me to predetermine the room layout, customization their graphics and even include specific regions on screen that the player would need to find, in order to move onto the next room. 
+     </p>
+  </section>
+
+  <!-- Enhancement 3 -->
+  <section id="enhancement3">
+      <h2>Enhancement 3</h2>
+      <p>
+        For the final database enhancement, I had included an SQLite component to my python code. This enhancement allows the user to track their high scores when playing the game. To achieve this, I have developed a timer to the game that will track how long it takes the player to complete a play through. Once the player completes the game, they will have the chance to input their name and see a list of the top ten high scores, which is stored in a small and simple database.  
+      </p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+      <p>&copy; 2024 Tyler Pimental. All Rights Reserved.</p>
+  </footer>
 </body>
 </html>
